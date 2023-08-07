@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Box</title>
+<style>
+    body {
+        /* create size of "box" gradient, compensating roughly for border and offset and  making it responsive */
+        background-size: min(90vw, 296px) min(90vw, 311px);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        /* create a gradient with sharp edges that rotates around a center point to make the inner colored shapes */
+        background-image: conic-gradient(blue 0, blue 90deg, #C02E2C 90deg, #C02E2C 180deg, #68ED57 180deg, #68ED57 360deg);
+        /* Offset to compensate for border */
+        background-position: 10px 10px;
+        /* the border, no need to get fancy with a border-gradient */
+        border: 5px solid white;
+    }
+</style>
+</head>
+<body>
+
+    <!-- nothing here, it's all done with css in order to reduce the number of HTML elements - NOTE- I did not add a "lang" attribute to the html, since the directions said "mininmal html elements" -it will validate with a warning and there's nothing written on the page - but ordinarily that would be important for accessibility, internationalization, etc -->
+
+</body>
+</html>
